@@ -25,7 +25,7 @@ public class RSATest {
 	        byte[] public_key = key_pair.getPublic().getEncoded();  // Extract the public key
 	        System.out.println("Public Key:  " + Base64.getEncoder().encodeToString(public_key));
 	        
-	        String secret_message = new String("This is my string to encrypt!");  // The secret message
+	        String secret_message = new String("This is my string to encrypt!");  // The secret message (must be under 117 bytes per block)
 	        
 	        byte cipher_text[] = null;
 	        Cipher rsa = Cipher.getInstance("RSA");  // Set up the type of encryption
