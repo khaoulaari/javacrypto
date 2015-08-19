@@ -1,3 +1,4 @@
+// Ref: http://www.madirish.net/561
 import java.security.SecureRandom;
 import javax.crypto.Cipher;
 import javax.crypto.spec.IvParameterSpec;
